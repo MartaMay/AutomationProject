@@ -17,7 +17,7 @@ import java.util.List;
 public class AutomationProject3 {
 
     @Test
-    public void testEdmunds() throws InterruptedException {
+    public void testEdmundsCars() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
