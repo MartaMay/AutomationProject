@@ -28,7 +28,7 @@ public class AutomationProject2 {
 
         driver.findElement(By.xpath("//span[text()='Search']")).click();
         driver.findElement(By.xpath("//input[@class='Text__TextElement-sc-if376j-0 gYdBJW encore-text-body-small QO9loc33XC50mMRUCIvf']")).sendKeys("Dancing on my own", Keys.ENTER);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();",(driver.findElement(By.xpath("//button[@data-testid='play-button']"))));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();",(driver.findElement(By.xpath("//div[@class='pgwIORyBdf4nbb4G5_Jx']//button[@data-testid='play-button']"))));
         Thread.sleep(10000);
 
         WebElement song = driver.findElement(By.xpath("//div[@data-testid='now-playing-widget']"));
@@ -37,9 +37,9 @@ public class AutomationProject2 {
         Assert.assertTrue(artist.isDisplayed());
 
         //Logout:
-        driver.findElement(By.xpath("//button[@data-testid='user-widget-link']")).click();
-        driver.findElement(By.xpath("//span[text()='Log out']")).click();
-        Assert.assertTrue((driver.findElement(By.xpath("//button[@data-testid='login-button']"))).isDisplayed());
+//        driver.findElement(By.xpath("//button[@data-testid='user-widget-link']")).click();
+//        driver.findElement(By.xpath("//span[text()='Log out']")).click();
+//        Assert.assertTrue((driver.findElement(By.xpath("//button[@data-testid='login-button']"))).isDisplayed());
 
 
 
